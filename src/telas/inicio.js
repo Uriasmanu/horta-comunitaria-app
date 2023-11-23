@@ -1,19 +1,22 @@
 import React from "react";
-import { Image, StyleSheet, Dimensions, Text } from "react-native";
+import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
 
 import topo from '../../assets/topo.png';
+import menu from '../../src/menu.png';
 
 export default function Inicio(){
-    return <>
-    <Image source={topo} style={estilos.topo} />
-
-    </> 
+    return (
+    <View style={estilos.container}>
+        <Image source={topo} style={estilos.topo} />
+        <Image source={menu} style={[estilos.menu, { tintColor: 'fff'}]} />
+    </View>
+    );
 }
 
 const estilos = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         alignItems: 'center',
     },
     topo: {
@@ -21,4 +24,12 @@ const estilos = StyleSheet.create({
         height: 100, // Defina a altura desejada para o ícone
         resizeMode: 'contain', // Isso garante que a imagem seja redimensionada para caber no contêiner mantendo sua proporção
     },
+
+    menu:{
+        width: 45, // Defina a largura desejada para o ícone
+        height: 45, // Defina a altura desejada para o ícone
+        resizeMode: 'contain', // Isso garante que a imagem seja redimensionada para caber no contêiner mantendo sua proporção
+        marginRight: '5%',
+        
+    }
 });

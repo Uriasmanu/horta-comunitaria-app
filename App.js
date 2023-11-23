@@ -3,7 +3,7 @@ import Inicio from './src/telas/inicio';
 
 export default function App() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={estilosInicio.container}>
       <StatusBar/>
      <Inicio/>
     </SafeAreaView>
@@ -11,3 +11,9 @@ export default function App() {
 }
 
 
+const estilosInicio = StyleSheet.create({
+  container: {
+    backgroundColor:"#3C533C",
+    flex: 1,
+  }
+})
