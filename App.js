@@ -3,6 +3,7 @@ import Inicio from './src/telas/inicio';
 import Card from './src/telas/projetos';
 import Card2 from './src/telas/outrosProjetos';
 import Mapa from './src/telas/localizacao';
+import WebViewExample from './src/telas/teste';
 
 export default function App() {
   return (
