@@ -1,12 +1,18 @@
-import { StatusBar ,StyleSheet, Text, SafeAreaView} from 'react-native';
+import { StatusBar ,StyleSheet, Text, ScrollView} from 'react-native';
 import Inicio from './src/telas/inicio';
+import Card from './src/telas/projetos';
+import Card2 from './src/telas/outrosProjetos';
+import Mapa from './src/telas/localizacao';
 
 export default function App() {
   return (
-    <SafeAreaView style={estilosInicio.container}>
+    <ScrollView style={estilosInicio.container}>
       <StatusBar/>
      <Inicio/>
-    </SafeAreaView>
+     <Card/>
+     <Card2/>
+     <Mapa/>
+    </ScrollView>
   );
 }
 
