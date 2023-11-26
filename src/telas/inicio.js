@@ -5,7 +5,7 @@ import topo from '../../assets/topo.png';
 import menu from '../../src/menu.png';
 import iconeSeta from '../../src/arrow_forward.png';
 
-export default function Inicio(){
+const Inicio = () => {
     return (
         <View>
             <View style={estilos.container}>
@@ -39,31 +39,26 @@ const estilos = StyleSheet.create({
         height: 100,
         resizeMode: 'contain',
     },
-
     menu: {
         width: 45,
         height: 45,
         resizeMode: 'contain',
-        marginRight: 5, // Corrigindo a margem para uma unidade fixa
+        marginRight: 5,
     },
-
     introducao: {
         flexDirection: 'column',
         justifyContent: 'space-between',
         alignItems: 'center',
         marginVertical: 15,
     },
-
     titulo: {
         fontSize: 25,
         color: '#fff',
     },
-
-    containerBotao:{
+    containerBotao: {
         alignItems:'center',
         width: '94%',
     },
-
     botao: {
         backgroundColor: '#98ff6c',
         padding: 10,
@@ -75,11 +70,16 @@ const estilos = StyleSheet.create({
         justifyContent:'space-between',
         alignItems: 'center',
     },
-
     textoBotao: {
         color: '#3C533C',
         fontSize: 15,
         fontWeight: 'bold',
     },
-
+    seta: {
+        width: 20,
+        height: 20,
+        resizeMode: 'contain',
+    },
 });
+
+export default Inicio;
