@@ -3,7 +3,7 @@ import Inicio from './src/telas/inicio';
 import Card from './src/telas/projetos';
 import Card2 from './src/telas/outrosProjetos';
 import Mapa from './src/telas/localizacao';
-import WebViewExample from './src/telas/teste';
+import ParceirosFooter from './src/telas/footer';
 
 export default function App() {
   return (
@@ -13,6 +13,7 @@ export default function App() {
      <Card/>
      <Card2/>
      <Mapa/>
+     <ParceirosFooter/>
     </ScrollView>
   );
 }
