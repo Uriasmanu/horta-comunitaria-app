@@ -10,14 +10,16 @@ const Inicio = () => {
         <View>
             <View style={estilos.container}>
                 <Image source={topo} style={estilos.topo} />
-                <Image source={menu} style={[estilos.menu, { tintColor: '#ffffff' }]} />
+                <TouchableOpacity style={estilos.botaoMenu} onPress={() => console.log('Botão de menu pressionado!')}>
+                    <Image source={menu} style={[estilos.menu, { tintColor: '#ffffff' }]} />
+                </TouchableOpacity>
             </View>
 
             <View style={estilos.introducao}>
                 <Text style={estilos.titulo}>Horta Comunitaria: Vinha do Senhor</Text>
 
                 <View style={estilos.containerBotao}>
-                    <TouchableOpacity style={estilos.botao}>
+                    <TouchableOpacity style={estilos.botao} onPress={() => console.log('Botão pressionado!')}>
                         <Text style={estilos.textoBotao}>Saiba mais</Text>
                         <Image source={iconeSeta} style={[estilos.seta, { tintColor: '#3C533C' }]} />
                     </TouchableOpacity>
@@ -39,11 +41,14 @@ const estilos = StyleSheet.create({
         height: 100,
         resizeMode: 'contain',
     },
+    botaoMenu: {
+        padding: 10,
+        borderRadius: 5,
+    },
     menu: {
         width: 45,
         height: 45,
         resizeMode: 'contain',
-        marginRight: 5,
     },
     introducao: {
         flexDirection: 'column',
@@ -78,6 +83,11 @@ const estilos = StyleSheet.create({
     seta: {
         width: 20,
         height: 20,
+        resizeMode: 'contain',
+    },
+    imagemNoBotao: {
+        width: 30,
+        height: 30,
         resizeMode: 'contain',
     },
 });
