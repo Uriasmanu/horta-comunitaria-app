@@ -9,36 +9,36 @@ import iconeSeta from '../../src/arrow_forward.png';
 const Card = ({ title, imageSource, onPress }) => {
   return (
     <View>
-    <TouchableOpacity style={styles.card} onPress={onPress}>
+    <TouchableOpacity style={styles.card} onPress={() => alert('Botão  pressionado!')}>
       <Image source={primeira} style={styles.cardImage} />
       <Text style={styles.cardTitle}>Horta medicinal {title}</Text>
       <View style={styles.line}></View>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button} onPress={onPress}>
+        <TouchableOpacity style={styles.button} onPress={() => alert('Botão  pressionado!')}>
             <Text style={styles.buttonText}>Saiba mais</Text>
             <Image source={iconeSeta} style={[styles.seta, { tintColor: '#3C533C' }]} />
         </TouchableOpacity>
       </View>
     </TouchableOpacity>
 
-    <TouchableOpacity style={styles.card} onPress={onPress}>
+    <TouchableOpacity style={styles.card} onPress={() => alert('Botão  pressionado!')}>
       <Image source={segunda} style={styles.cardImage} />
       <Text style={styles.cardTitle}>Projeto Sopão {title}</Text>
       <View style={styles.line}></View>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button} onPress={onPress}>
+        <TouchableOpacity style={styles.button} onPress={() => alert('Botão  pressionado!')}>
             <Text style={styles.buttonText}>Saiba mais</Text>
             <Image source={iconeSeta} style={[styles.seta, { tintColor: '#3C533C' }]} />
         </TouchableOpacity>
       </View>
     </TouchableOpacity>
 
-    <TouchableOpacity style={styles.card} onPress={onPress}>
+    <TouchableOpacity style={styles.card} onPress={() => alert('Botão  pressionado!')}>
       <Image source={terceira} style={styles.cardImage} />
       <Text style={styles.cardTitle}>Projeto com as crianças: Semeando o furturo {title}</Text>
       <View style={styles.line}></View>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button} onPress={onPress}>
+        <TouchableOpacity style={styles.button} onPress={() => alert('Botão  pressionado!')}>
             <Text style={styles.buttonText}>Saiba mais</Text>
             <Image source={iconeSeta} style={[styles.seta, { tintColor: '#3C533C' }]} />
         </TouchableOpacity>

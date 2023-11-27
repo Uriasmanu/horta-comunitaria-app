@@ -1,8 +1,9 @@
 import React from "react";
-import { Image, StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { Image, StyleSheet, Text, View, TouchableOpacity , Alert} from "react-native";
 
 import topo from '../../assets/topo.png';
 import menu from '../../src/menu.png';
+import close from '../../src/close.png'
 import iconeSeta from '../../src/arrow_forward.png';
 import imagemInicio from '../../assets/Imagens/inicio.jpeg';
 
@@ -10,11 +11,11 @@ const Inicio = () => {
     return (
         <View style={estilos.body}>
             <View style={estilos.container}>
-                <TouchableOpacity onPress={() => console.log('Botão de menu pressionado!')}>
+                <TouchableOpacity onPress={() => alert('Botão  pressionado!')}>
                     <Image source={topo} style={estilos.topo} />
                 </TouchableOpacity>
 
-                <TouchableOpacity style={estilos.botaoMenu} onPress={() => console.log('Botão de menu pressionado!')}>
+                <TouchableOpacity style={estilos.botaoMenu} onPress={() => alert('Botão de menu pressionado!')}>
                     <Image source={menu} style={[estilos.menu, { tintColor: '#ffffff' }]} />
                 </TouchableOpacity>
             </View>
@@ -23,7 +24,7 @@ const Inicio = () => {
                 <Text style={estilos.titulo}>Horta Comunitaria: Vinha do Senhor</Text>
 
                 <View style={estilos.containerBotao}>
-                    <TouchableOpacity style={estilos.botao} onPress={() => console.log('Botão pressionado!')}>
+                    <TouchableOpacity style={estilos.botao}  onPress={() => alert('Botão  pressionado!')}>
                         <Text style={estilos.textoBotao}>Saiba mais</Text>
                         <Image source={iconeSeta} style={[estilos.seta, { tintColor: '#3C533C' }]} />
                     </TouchableOpacity>

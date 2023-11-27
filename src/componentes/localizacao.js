@@ -38,6 +38,7 @@ const Mapa = () => {
     containerEndereco:{
         flexDirection: 'row',
         margin: 17,
+        
     },
 
     line: {
@@ -50,6 +51,7 @@ const Mapa = () => {
 
     texto: {
       color: '#FFFFFF', // Adicionando a cor branca ao estilo do texto
+      fontSize: 18,
     },
   });
   

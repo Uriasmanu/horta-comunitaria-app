@@ -2,11 +2,11 @@ import React from 'react';
 import { StatusBar, StyleSheet, Text, ScrollView, View } from 'react-native';
 import { useFonts, Arvo_400Regular, Arvo_700Bold } from '@expo-google-fonts/arvo';
 
-import Inicio from './src/telas/inicio';
-import Card from './src/telas/projetos';
-import Card2 from './src/telas/outrosProjetos';
-import Mapa from './src/telas/localizacao';
-import ParceirosFooter from './src/telas/footer';
+import Inicio from './src/telas';
+import Card from './src/componentes/projetos';
+import Card2 from './src/componentes/outrosProjetos';
+import Mapa from './src/componentes/localizacao';
+import ParceirosFooter from './src/componentes/footer';
 
 export default function App() {
   const [fonteLoad] = useFonts({
