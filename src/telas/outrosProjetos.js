@@ -62,6 +62,7 @@ const styles = StyleSheet.create({
     color: '#3C533C',
     alignSelf:'flex-start',
     margin: 13,
+    fontFamily: 'ArvoRegular',
   },
 
   card: {

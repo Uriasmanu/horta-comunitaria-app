@@ -74,6 +74,8 @@ const estilos = StyleSheet.create({
     titulo: {
         fontSize: 25,
         color: '#fff',
+        fontFamily: 'ArvoRegular',
+        width: '96%',
     },
     containerBotao: {
         width: '98%',
@@ -115,6 +117,8 @@ const estilos = StyleSheet.create({
         fontSize: 23,
         color: '#fff',
         alignSelf:'flex-start',
+        fontFamily: 'ArvoRegular',
+        marginTop: 10,
     },
 });
 
